@@ -1,0 +1,10 @@
+.list{
+    text-decoration: none;
+}
+
+#checkbox:checked + label .list{
+    text-decoration: line-through;
+}
+body{
+    display: flex;
+}
