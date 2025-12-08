@@ -1,8 +1,8 @@
 .content{
-    line-height: 1.5em; /* 行の高さを固定 */
+    line-height: 1.5em; 
     background: repeating-linear-gradient(
     180deg,
-    #f0f0f0 0 1.5em,  /* 1行目の色 */
-    #ffffff 1.5em 3em /* 2行目の色 → 以降繰り返し */
+    #f0f0f0 0 1.5em,  
+    #ffffff 1.5em 3em 
   )
 }
