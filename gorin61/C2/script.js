@@ -44,8 +44,8 @@ let size = 150
 
 img.addEventListener('mousemove',(e)=>{
   const rect = img.getBoundingClientRect()
-  x = Math.floor((e.clientX - rect.left)/10)*10
-  y = Math.floor((e.clientY - rect.top)/10)*10
+  x = e.clientX 
+  y = e.clientY
   console.log(x,y)
   pointer.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.75) ${size}px)`;
 })
