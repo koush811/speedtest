@@ -27,8 +27,6 @@ input.addEventListener('input',()=>{
         color.style.backgroundColor = `${hexv}`
     } else {
         color.textContent = 'エラー';
-        
     }
-    
 
 })

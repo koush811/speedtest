@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    cursor: none;
+}
+
+#area{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#mouse{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;;
+    transform: translate(-50% ,-50%);
+}
+

@@ -11,6 +11,7 @@ function draw() {
     ctx.fillStyle = 'green';
     ctx.fill();
     requestAnimationFrame(draw);
+    
 }
 draw()
 
