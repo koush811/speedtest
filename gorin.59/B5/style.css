@@ -1,0 +1,30 @@
+#btn{
+    position: relative;
+    display: flex;
+    background-color: aqua;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    align-items: center;
+}
+#check{
+    display: none;
+}
+.cir{
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+}
+
+#check:checked + #btn{
+    background-color: blue;
+}
+
+#check:checked + #btn .cir{
+    left: 50px;
+    background-color: aqua;
+}
+
