@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 0;
+    height: 0;
+    animation: change 5s infinite;
+}
+@keyframes change{
+    0%{
+        border-top: 50px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+    }
+    100%{
+        border: 50px solid yellow;
+    }
+
+
+}
