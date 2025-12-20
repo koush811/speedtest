@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    font-size: 300%;
+}
+
+#hero{
+    width: 500px;
+    height: 300px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

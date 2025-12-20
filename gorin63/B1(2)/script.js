@@ -19,13 +19,12 @@ startbtn.addEventListener('click',()=>{
         temp = time
         const minute = String(Math.floor(temp / (60 * 1000))).padStart(2,"0");
         temp -= minute * 60*1000
-        const second = String(Math.floor(time / 1000)).padStart(2,"0")
+        const second = String(Math.floor(temp / 1000)).padStart(2,"0")
         temp -= second*1000
         const msecond = String(Math.floor(temp/10)).padStart(2,"0")
         display.textContent = `${minute}:${second}:${msecond}`
         prevtime = Date.now()
         console.log(time);
-        
     },10)
 })
 
