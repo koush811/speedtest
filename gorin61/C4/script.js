@@ -3,20 +3,19 @@ const ctx = canvas.getContext('2d')
 let x = 0
 let y = 0
 
-let drow = false
+let draw = false
 
 canvas.addEventListener('mousedown',(e)=>{
-    drow = true
+    draw = true
     x = e.clientX
     y = e.clientY
     ctx.lineWidth = 3
     ctx.beginPath()
     ctx.moveTo(x,y)
-   
 })
 
 canvas.addEventListener('mousemove',(e)=>{
-    if(!drow)return
+    if(!draw)return
     x = e.clientX
     y = e.clientY
     ctx.lineTo(x, y);
@@ -24,7 +23,7 @@ canvas.addEventListener('mousemove',(e)=>{
 })
 
 canvas.addEventListener('mouseup',(e)=>{
-    drow = false
+    draw = false
 })
 
 const colors = document.querySelectorAll('button')
@@ -34,7 +33,6 @@ colors.forEach(function(color){
     button.addEventListener('click',()=>{
         ctx.strokeStyle = color.id
     })
-    
 })
 
 const savejpg = document.getElementById('jpg')

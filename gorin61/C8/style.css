@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.buble{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
