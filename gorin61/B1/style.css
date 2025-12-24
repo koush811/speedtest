@@ -1,6 +1,11 @@
 body{
+    margin: 0;
+}
+label{
     display: flex;
-    
+}
+input{
+    position: absolute;
 }
 .box{
     width: 80px;
@@ -11,6 +16,9 @@ body{
     border: solid 1px black;
 }
 .box:active{
+    
+}
+#input:checked +label.box{
     background-color: yellow;
     border: solid 3px black;
 }

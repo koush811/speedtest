@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+label{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.lines{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.line{
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    transition: all .5s;
+}
+
+#input:checked +#btn .line1{
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+#input:checked +#btn .line2{
+    transform: rotate(135deg);
+    top: 50%;
+}
+#input:checked +#btn .line3{
+    transform: rotate(135deg);
+    top: 50%;
+}
+
+.line1{
+    top: 80%;
+}
+.line2{
+    top: 50%;
+}
+.line3{
+    top: 20%;
+}
+
+input{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
