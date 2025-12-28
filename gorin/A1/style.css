@@ -1,64 +1,56 @@
 body{
-    margin: 0;
     height: 100vh;
     width: 100vw;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
-
-label{
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    
-}
-
 .lines{
-    height: 100px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+}
+label{
+    position: relative;
+    height: 100px;
+    width: 100px;
 }
 .line{
     background-color: white;
-    height: 10px;
-    width: 100%;
+    width: 50px;
+    height: 5px;
     position: absolute;
-    transition: all .5s;
+    transition: all 1s;
+    left: 50%; 
+    transform: translateX(-50%);
 }
-
-#input:checked +#btn .line1{
-    transform: rotate(45deg);
-    top: 50%;
-}
-
-#input:checked +#btn .line2{
-    transform: rotate(135deg);
-    top: 50%;
-}
-#input:checked +#btn .line3{
-    transform: rotate(135deg);
-    top: 50%;
-}
-
 .line1{
-    top: 80%;
+    top: 70%;
 }
 .line2{
     top: 50%;
 }
 .line3{
-    top: 20%;
+    top: 30%;
+}
+
+#input:checked + label .line1{
+    top: 50%;
+    transform:  translateX(-50%) rotate(45deg);   
+}
+#input:checked + label .line2{
+    top: 50%;
+    transform:  translateX(-50%) rotate(45deg);
+    
+}
+#input:checked + label .line3{
+    top: 50%;
+    transform:  translateX(-50%) rotate(135deg);
 }
 
 input{
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
 }
 
 
